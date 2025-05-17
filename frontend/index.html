@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Differential Equation Model Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Differential Equation Model Explorer</h1>
+
+  <div id="controls">
+    <label for="model-select">Select model:</label>
+    <select id="model-select">
+      <option value="population">Population Growth</option>
+      <option value="predator-prey">Predator-Prey</option>
+    </select>
+
+    <!-- Sliders/inputs will be added dynamically -->
+    <div id="params-container"></div>
+  </div>
+
+  <canvas id="plotCanvas" width="800" height="400"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
